@@ -1,3 +1,7 @@
+# Define directories and files
+directory="/home/rohit/ISRO"
+input_file="$directory/Sitereport.dat"
+output_file="$directory/converted.sec"
 
 # Ensure the input file exists
 if [[ -f "$input_file" ]]; then
@@ -32,7 +36,7 @@ if [[ -f "$input_file" ]]; then
     done < "$input_file"
 
     echo "Data successfully appended to '$output_file' without leading spaces."
-    echo "Contents of '$output_file':"
+    echo "Contents of '$output_file':"i
     #cat "$output_file"
 else
     echo "Input file '$input_file' not found."
